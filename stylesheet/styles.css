@@ -1,0 +1,1085 @@
+:root{
+    --blanco:#ffffff;
+    --negro: #212121;
+    --principal: #0f1f2f;
+    --principalsoft:#31404e;
+    /* HEX : #0f1f2f
+RGB : 15, 31, 47
+HSL  : 210, 51%, 12% */
+    --gris:#6f7982;
+    /* HEX : #6f7982
+RGB : 111, 121, 130
+HSL  : 208, 7%, 47% */
+    --tercero:#dc9f44; 
+    /* HEX : #dc9f44
+RGB : 220, 159, 68
+HSL  : 35, 68%, 56% */
+    --tercerosoft:#e3c591;
+    /* HEX : #e3c591
+RGB : 227, 197, 145
+HSL  : 38, 59%, 72% */
+
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 16px;/* 1rem=10px*/
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Establece el peso de la fuente a normal para todos los elementos de texto */
+}
+ h1 {
+    font-size: 3.8rem;
+ }
+
+ h2 {
+    font-size: 2.8rem;
+ }
+
+ h3 { 
+    font-size: 1.8rem;
+ }
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; /* Establece el peso de la fuente a normal para los encabezados */
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.titulo {
+    font-weight: 100;
+    font-size: 4.5rem;
+    color: var(--principal);
+    text-transform: uppercase;
+    margin-left: 20rem;
+    margin-right: 45rem;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo span {
+  font-size: 1rem;
+}
+
+/*Ver formato de logo*/
+.logo {
+  padding: 1rem 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 193px;
+  height: 82.5px;
+} 
+
+@media (max-width: 576px) {
+
+  .titulo {
+    font-size: 2rem;
+    color: var(--principal);
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .titulo span{
+    font-size: 0.5rem;
+  }
+
+  .logo{
+    width:96.5px;
+    height: 41.25px;
+    margin-bottom: 0rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+
+/* Menú */
+
+.nav-bg{
+    background-color: var(--principal);
+}
+
+.contenedor{
+  max-width: 120rem;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin: 0 auto 0 auto; /* dos formas de poner margin*/
+}
+
+.navegacion-principal{
+    display: flex; /*habilita flexbox*/
+    flex-direction: row;
+    justify-content: space-evenly ;
+}
+
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover { 
+    /* background-color: var(--lila); */
+    color: var(--tercerosoft);
+}
+
+.hero {
+     background-image: url(../imag/aaaa.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative; /* para que el hijo se pueda posicionar de forma absoluta */
+     height: 300px;
+    /* background-image: linear-gradient(to left,#ffffff,#D2B4DE); */
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(176, 176, 153, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}      
+
+.contenido-hero span{
+    font-size: 1.5rem;
+}
+
+.contenido-hero p{
+    font-size: 3rem;
+    color:var(--principal);
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    font-weight: 300;
+}      
+    @keyframes slidein {
+        from {
+      transform: translateX(100%);
+  }
+
+  to {
+      transform: translateX(0%);
+  }
+}
+
+/* Media menú para que muestre en columnas */
+@media (max-width: 576px) {
+  .navegacion-principal{
+       flex-direction: column;  
+  }
+
+  .hero{
+    height: 200px;
+  }
+
+  .contenido-hero p{
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+
+/** Conocenos**/
+.quienes {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    /* background-color: #efd49a; */
+    padding: 2rem 1rem ;
+    margin-left: 8.5rem;
+    margin-right: 8.5rem;
+    font-weight: 300;
+}
+
+  .wrapper {
+    /*Sombra contenedor*/
+    height: 420px;
+    width: 654px;
+    margin: 50px auto;
+    border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-img {
+    float: left;
+    height: 420px;
+    width: 327px;
+  }
+  
+  .product-img img {
+    border-radius: 7px 0 0 7px;
+  }
+  
+  .product-info {
+    float: left;
+    height: 420px;
+    width: 327px;
+    border-radius: 0 7px 10px 7px;
+    background-color: #ffffff;
+  }
+  
+  .product-text {
+    height: 300px;
+    width: 325px;
+  }
+  
+  .product-text h2 {
+    margin: 0 0 0 38px;
+    padding-top: 38px;
+    font-size: 34px;
+    color: var(--negro)
+  }
+  
+  .product-text h2,
+  .product-price-btn p {
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .product-text h3 {
+    margin: 0 0 47px 38px;
+    font-size: 13px;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--negro);
+    letter-spacing: 0.2em;
+  }
+  
+  .product-text p {
+    height: 125px;
+    margin: 0 0 0 38px;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--negro);
+    line-height: 1.7em;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+  }
+  
+  .product-price-btn {
+    height: 100px;
+    width: 327px;
+    margin-top: 28px;
+    position: relative;
+  }
+  
+  .product-price-btn a {
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    height: 50px;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 0 0 38px;
+    font-size: 28px;
+    font-weight: lighter;
+  }
+  
+
+  .product-price-btn a {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0px 50px 1px 60px;
+    padding-left: 0.8rem;
+    padding-top: 1.5rem;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: var(--principal);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .product-price-btn a:hover {
+    background-color: var(--principalsoft);
+  }
+  
+  
+/* Media queries QUIENES SOMOS  */
+@media (max-width: 576px) {
+  
+  .quienes{
+    font-size: 2rem;
+  }
+
+  .wrapper {
+    /*Sombra contenedor*/
+    height: 620px;
+    width: 327px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 30px;
+  }
+  
+  .product-img {
+    height: 300px;
+    width: 325px;
+    
+  }
+  
+  .product-img img {
+    border-radius: 7px 7px;
+  }
+  
+  .product-info {
+    float: left;
+    height: 250px;
+    width: 327px;
+    border-radius: 7px;
+    background-color: var(--blanco);
+  }
+  
+  .product-text {
+    height: 300px;
+    width: 327px;
+    margin-right: 17px;
+    margin-left: 17px;
+  }
+  
+  .product-text h2 {
+    margin: 0 0 0 40px;
+    padding-top: 15px;
+    font-size: 23px;
+    color: var(--negro);
+  }
+  
+  .product-text p {
+    height: 125px;
+    margin: 0 0 0 38px;
+    font-size: 13px;
+  }
+  
+  .product-price-btn {
+    height: 80px;
+    width: 500px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-left: 38px;
+  }
+  
+  .product-price-btn a {
+    top: -45px;
+    margin: 0 0 0 38px;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+}
+  
+
+/** Utilidades**/
+
+.w-sm-100 {
+    width: 100%;
+}
+ @media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+ }
+
+.flex{
+    display: flex;
+ }
+ .alinear-derecha{
+    justify-content: flex-end;
+ }
+
+
+/* INICIO Nuestra filosofía */ 
+
+.nuestra-filosofia {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    /* background-color: var(--tercerosoft); */
+    padding: 2rem 1rem ;
+    margin-left: 8.5rem;
+    margin-right: 8.5rem;
+    margin-top: 20rem;  
+}
+
+.filosofia {
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem 1rem ;
+    margin-left: 8.5rem;
+    margin-right: 8.5rem;
+    font-size: 1.8rem;/* 1rem=10px*/
+    font-weight: 300;
+    color: var(--principalsoft);
+}
+.container-card-circle {
+  text-align:center;
+  margin-top:50px;
+  background:#27496D;    
+  border:10px solid transparent;
+  padding:50px;
+  border-radius:50%;
+
+    /* height: 100vh; Ajusta la altura según tu necesidad */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+.card-circle{
+    text-align:center;
+     margin-top:50px;
+     background:var(--principal);    
+     border:10px solid transparent;
+     color:#fff;
+     Font-family: Montserrat;
+     padding:50px;
+     border-radius:50%;
+}
+ .card-circle .card-title{
+    font-weight:600;
+     font-size:26px;
+}
+ .card-circle .card-text{
+    font-weight:400;
+}
+
+ .card-circle:nth-child(2){
+    background:var(--principal);
+ }
+
+ .card-circle .btn{
+    Font-family: Montserrat;
+    background:transparent;
+     border:1px solid transparent;
+     text-transform:uppercase;
+     text-decoration: none;
+     color: #ffffff;
+     padding:5px 30px;    
+     border-radius:0px;
+     Font-weight:600;
+}
+.card-circle .btn,.card-circle{
+   transition: all ease-in-out 0.2s;
+}
+ .card-circle:hover .btn{
+    background:var(--principalsoft);
+     color:#fff;
+   border: 1px solid transparent;
+}
+ .card-circle .btn:hover{
+    transform: scale(1.1);
+}
+ .card-circle:hover{
+    border:10px solid var(--principalsoft);
+}
+ .card-circle:hover i {
+   text-shadow: 0px -1px 10px #5d0808;
+    transform:scale(1.2)rotate(20deg);
+}
+
+
+ @media only screen and (min-width: 1200px) {
+ 
+     .card-circle{
+         width:400px;
+         height:400px;
+         margin-left: 17rem;
+    }
+     .card-circle:nth-child(2){
+         margin-left:40rem;
+         box-shadow: 1px 2px 20px 8px rgba(241, 235, 235, 0.12);
+         transform: scale(1.2);
+    }}
+ 
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+   .card-circle{
+         width:340px;
+         height:340px;
+    }
+
+   .card-circle:nth-child(2){
+         margin-left:-20px;
+         z-index:1;
+    }
+}
+
+
+@media  (max-width:576px) {
+
+  .nuestra-filosofia {
+    font-size: 2rem;
+}
+
+.filosofia {
+    padding:3px 3px 0px 0px ;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.4rem;/* 1rem=10px*/
+}
+
+.card-circle {
+  width: 200px;
+  height: 200px;
+  margin: 10px 30px 20px 30px ;
+  /*arriba, izquierda, abajo, dercha*/
+}
+
+.card-circle:nth-child(2){
+ width: 300px;
+ height: 300px;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+ .card-circle .card-title{
+     font-size:13px;
+}
+ .card-circle .card-text{
+    font-weight:400;
+    font-size: 10px;
+}
+
+ .card-circle .btn{
+     padding:5px 20px;    
+     border-radius:0px;
+     Font-weight:600;
+     font-size: 10px;
+}
+
+.card-body{
+  width: 100px;
+  height: 200px;
+}
+.card-circle .btn,.card-circle .card-icon i,.card-circle{
+   transition: all ease-in-out 0.2s;
+}
+ .card-circle:hover .btn{
+    background:var(--principalsoft);
+     color:#fff;
+   border: 1px solid transparent;
+}
+ .card-circle .btn:hover{
+    transform: scale(1.1); /*cuan grande al click boton*/
+}
+ .card-circle:hover{
+    border:10px solid var(--principalsoft);
+}
+ .card-circle:hover i {
+   text-shadow: 0px -1px 10px #5d0808;
+    transform:scale(1.2)rotate(20deg);
+}
+
+
+}
+/*FIN CARDS cirulares*/
+
+
+ /* INICIO SECCIÓN FINAL CONTACTO */
+
+ .seccionContactos{
+  margin-top: 20rem;
+}
+
+.seccionContactos h2{
+
+    text-align:center;
+    margin-right:41rem ;
+    font-size: 2rem;
+    color: var(--principal);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold; /*cambia a negrita     */
+}
+
+.contactos-cont {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linea-contacto {
+  display: flex; /* Usar flexbox para alinear los elementos en línea */
+  align-items: center; /* Alinear verticalmente los elementos en el contenedor */
+  text-decoration: none;
+  color: var(--principal);
+  text-align: center;
+  margin-bottom: 10px; /* Espacio entre las líneas de contacto */
+}
+
+.linea-contacto svg {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.linea-contacto h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* FIN SECCIÓN CONTACTO*/
+
+
+/*INICIO FOOTER*/
+.footer {
+    text-align: center;
+
+}
+
+.footer p {
+  margin-top: 3rem;
+}
+
+
+
+/* Section servicios */
+/* .servicios {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold; /*cambia a negrita  */
+    /* font-size: 40px;
+    padding: 35px;
+    text-align: center;
+    color: #5F3B06;
+  } */ 
+
+/*INICIO ACORDEÓN */
+
+/* Alinea el texto del encabezado al centro. */
+ 
+.serv {
+    color: var(--principal);
+    text-align: center;
+}
+
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
+
+.acordeon {
+  width: 500px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  margin-left: 400px;
+  color: var(--principal); /*Cambia color de letra*/
+  background-color:var(--lila);
+  padding: 45px 45px;
+}
+
+.acordeon .contenedor {
+  position: relative;
+  margin: 10px 10px;
+}
+
+/* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+
+.acordeon .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+
+.acordeon .label::before {
+  content: '+';
+  color: var(--principal);
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+
+.acordeon .contenido {
+  
+  background:var(--lila);
+  height: 0;
+  font-size: 20px;
+  /* text-align: justify; */
+  text-align: start;
+  /* text-decoration: dashed; */
+  width: 380px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+/* Añade una línea horizontal entre los contenidos */
+
+.acordeon hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid 
+}
+
+/* Muestra la parte de contenido cuando está activa. Establece la altura */
+.acordeon .contenedor.activa .contenido {
+  height: 150px;
+}
+
+/* Cambia de signo positivo a negativo una vez activado */
+.acordeon .contenedor.activa .etiqueta::before {
+  content: '-';
+  font-size: 30px;
+}
+
+
+
+/** N°2 CONTACTO **/
+.titu {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 2rem 1rem ;
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  margin-top: 5rem;
+}
+
+.formulario {
+  background-color: var(--principal);
+  width: min(80rem, 100%); /** Utilizar el valor más pequeño**/
+  margin: 0 auto;
+  margin-bottom: 20rem;
+  padding: 2rem;
+  border-radius: 0.5rem; 
+}
+
+.formulario fieldset{
+  border: none;
+}
+
+.formulario legend{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--principal);
+}
+
+@media (min-width:768px){
+.contenedor-campos{
+display: grid ;
+grid-template-columns: 50% 50%;
+grid-template-rows: auto auto 20rem;
+column-gap: 1rem;
+}
+
+.campo:nth-child(3),
+.campo:nth-child(4){
+  grid-column: 1 / 3;
+}
+
+}
+.campo {
+ margin-bottom: 1rem;
+ color: var(--blanco);
+}
+
+.campo label{
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.campo textarea {
+  height: 20rem;
+  width: 40rem;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  border-radius: .5rem;
+}
+
+.btn-enviar {
+  padding: 10px 20px;
+  background-color: var(--tercero);
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-enviar:hover {
+  background-color: var(--tercerosoft);
+}
+.btn-enviar:active {
+  background-color: var(--gris);
+}
+
+.map{
+  margin-left: 40rem;
+}
+.text-map{
+  font-size: 2.5rem;
+  color: var(--principal);
+}
+/*FIN N°2 CONTACTO*/
+
+/* INICIO N°3 CONSULTORÍA*/
+
+.titu-asesor{
+  font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    /* background-color: #efd49a; */
+    padding: 2rem 1rem ;
+    margin-left: 8.5rem;
+    margin-right: 8.5rem;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  background-color: rgba(176, 176, 153, 0.8);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text h2{
+  font-size: 40px;
+  font-weight: 600;
+  position:relative;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.text {
+  color: var(--principalsoft);
+  font-size: 25px;
+  padding: 8px 16px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6rem;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.img1 {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  opacity: .2;
+}
+
+/*BTN*/
+.btn-consulta {
+  padding: 10px 20px;
+  background-color: var(--principal);
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-consulta:hover {
+  background-color: var(--principalsoft);
+}
+.btn-consulta:active {
+  background-color: var(--gris);
+}
+
+.t-asesoramiento{
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 2rem 1rem ;
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  margin-top: 5rem;  
+}
+
+.p-asesoramiento {
+  text-align: center;
+  font-weight: bold;
+  padding: 2rem 1rem ;
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  font-size: 1.8rem;/* 1rem=10px*/
+  font-weight: 300;
+  color: var(--principalsoft);
+}
+
+
+/*INICIO MEMBERS*/
+
+.members{
+  height: 30rem;
+  margin-left: 0;
+  margin-top: 20rem;
+}
+
+.members h2{
+  font-weight: 300;
+  text-align: center;
+  padding-top: 4rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.imglogos{
+  display: flex; /*habilita flexbox*/
+  flex-direction: row;
+  justify-content: space-around ;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 50rem;
+  gap: 6rem;
+}
+
+@media (max-width: 576px) {
+  
+.members{
+  height: 45rem;
+ 
+}
+
+  .members h2 {
+    font-size: 1rem;
+   }
+
+  .imglogos{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    width: 8rem;
+    height: 8rem;
+    margin-left: 16rem;
+    margin-right: 25rem;
+    margin-top: 10rem;
+    gap: 3rem;
+  }
+  
+}
