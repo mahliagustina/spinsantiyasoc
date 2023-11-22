@@ -227,7 +227,7 @@ header {
 
   .wrapper {
     /*Sombra contenedor*/
-    height: 420px;
+    height: 480px;
     width: 654px;
     margin: 50px auto;
     border-radius: 7px 7px 7px 7px;
@@ -238,13 +238,11 @@ header {
   
   .product-img {
     float: left;
-    height: 420px;
-    width: 327px;
   }
   
   .product-img img {
     border-radius: 7px 0 0 7px;
-    height: 420px;
+    height: 480px;
     width: 327px;
   object-fit: cover;}
 
@@ -259,7 +257,7 @@ header {
   }
   
   .product-text {
-    height: 300px;
+    height: 340px;
     width: 325px;
   }
   
@@ -291,7 +289,7 @@ header {
     letter-spacing: 0.2em;
   }
   
-  .numero-matricula{
+  /* .numero-matricula{
     font-size:8px ;
     letter-spacing: 0px;
     margin: -28px 0 47px 38px;
@@ -301,10 +299,10 @@ header {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     color: var(--negro);
-  }
+  } */
 
   .product-text p {
-    height: 210px;
+    height: 230px;
     margin: -30px 0 0 38px;
     font-family: 'Great Vibes', cursive;
     font-family: 'Lora', serif;
@@ -480,6 +478,35 @@ header {
     justify-content: flex-end;
  }
 
+/* AREAS EXTERNAS */
+.areas-externas {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  margin-top: 20rem;  
+}
+
+.areas-externas h3{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.areas-externas h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.areas-externas p{
+  text-align: center;
+  font-weight: bold;
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  font-size: 1.5rem;/* 1rem=10px*/
+  font-weight: 300;
+  color: var(--principal);
+
+}
 
 /* INICIO Nuestra filosofía */ 
 
