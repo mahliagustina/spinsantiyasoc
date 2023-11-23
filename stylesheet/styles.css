@@ -227,8 +227,8 @@ header {
 
   .wrapper {
     /*Sombra contenedor*/
-    height: 480px;
-    width: 654px;
+    height: 500px;
+    width: 685px;
     margin: 50px auto;
     border-radius: 7px 7px 7px 7px;
     -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -242,7 +242,7 @@ header {
   
   .product-img img {
     border-radius: 7px 0 0 7px;
-    height: 480px;
+    height: 500px;
     width: 327px;
   object-fit: cover;}
 
@@ -302,7 +302,7 @@ header {
   } */
 
   .product-text p {
-    height: 230px;
+    height: 250px;
     margin: -30px 0 0 38px;
     font-family: 'Great Vibes', cursive;
     font-family: 'Lora', serif;
@@ -333,7 +333,7 @@ header {
   .product-price-btn {
     height: 180px;
     width: 327px;
-    margin-top: 60px;
+    margin-top: 90px;
     position: relative;
   }
   
