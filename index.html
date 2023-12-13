@@ -4,14 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descrption" content="Estudio jurídico Spinsati y Asociados">
   <title>Spinsanti & Asoc.</title>
-  <link rel="stylesheet" href="stylesheet/normalize.css">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;500;600&family=Montserrat:wght@100&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@100;300&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="stylesheet/styles.css">
+ 
+ 
+
+  <!-- Pre-load -->
+ <link rel="preload" href="stylesheet/normalize.css" as="style">
+ <link rel="stylesheet" href="stylesheet/normalize.css">
+
+ <link rel="preload" href="stylesheet/styles.css" as="style">
+ <link rel="stylesheet" href="stylesheet/styles.css">
+
+ <link rel="preload" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;500;600&family=Montserrat:wght@100&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@100;300&display=swap"
+ crossorigin="crossorigin"   as="font" >
+ <link
+ href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;500;600&family=Montserrat:wght@100&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@100;300&display=swap"
+ rel="stylesheet">
+
+ <link rel="preload" href="./imag/Opción78.png" as="image">
+
 </head>
 
 <body>
@@ -19,7 +34,10 @@
     <h1 class="titulo">Spinsanti y Asoc.
       <span>Asesoramiento y litigación</span>
     </h1>
-    <img class="logo" src="./imag/Opción78.png" alt="">
+    <!-- <picture>
+      <source srcset="./imag/Opción78.webp" alt="estudio espinsanti"> -->
+      <img class="logo" src="./imag/Opción78.png" alt="estudio espinsanti">
+    <!-- </picture> -->
   </header>
 
   <section class="top-nav">
@@ -29,7 +47,9 @@
         <a href="index.html">Quienes somos</a>
         <a href="consultoria.html">Consultoría</a>
         <a href="contacto.html">Contacto</a>
-        <a href="newsletter.html">Newsletter</a>
+        <div class="actualiza">
+        <a class="actualiza" href="newsletter.html">Newsletter </a>
+      </div>
       </nav>
     </div>
   </section>
@@ -52,7 +72,7 @@
     <section class="quienes-somos">
       <div class="wrapper">
         <div class="product-img">
-          <img src="./imag/PERFIL-LEONARDO.jpeg">
+          <img src="./imag/PERFIL-LEONARDO.jpeg" alt="Leonado Spinsanti" loading="lazy">
         </div>
         <div class="product-info">
           <div class="product-text">
@@ -85,7 +105,7 @@
     <section>
       <div class="wrapper">
         <div class="product-img">
-          <img src="./imag/PERFIL-VANESSA.jpg">
+          <img src="./imag/PERFIL-VANESSA.jpg" alt="Vanesa Navas" loading="lazy">
         </div>
         <div class="product-info">
           <div class="product-text">
@@ -116,7 +136,7 @@
     <section>
       <div class="wrapper">
         <div class="product-img">
-          <img src="./imag/PERFIL-ROMINA.jpeg">
+          <img src="./imag/PERFIL-ROMINA.jpeg" alt="Romina Marascio" loading="lazy">
         </div>
         <div class="product-info">
           <div class="product-text">
@@ -144,7 +164,7 @@
     <section>
       <div class="wrapper">
         <div class="product-img imagenPablo">
-          <img src="./imag/WhatsApp Image 2023-11-16 at 4.12.17 PM.jpeg" ">
+          <img src="./imag/WhatsApp Image 2023-11-16 at 4.12.17 PM.jpeg" alt="Norberto Lezcano" loading="lazy">
     </div>
     <div class=" product-info">
           <div class="product-text">
@@ -171,7 +191,7 @@
     <section>
       <div class="wrapper">
         <div class="product-img">
-          <img src="./imag/CAMILA.jpeg">
+          <img src="./imag/CAMILA.jpeg" alt="Camila Mahli" loading="lazy">
         </div>
         <div class="product-info">
           <div class="product-text">
@@ -195,7 +215,7 @@
     <section>
       <div class="wrapper">
         <div class="product-img">
-          <img src="./imag/PERFIL-JORGE.jpeg">
+          <img src="./imag/PERFIL-JORGE.jpeg" alt="Jorge Javier Masi" loading="lazy">
         </div>
         <div class="product-info">
           <div class="product-text">
@@ -222,7 +242,7 @@
     <section>
       <div class="wrapper">
         <div class="product-img">
-          <img src="./imag/PERFIL-GIANNA.jpeg">
+          <img src="./imag/PERFIL-GIANNA.jpeg" loading="lazy" alt="Gianna Spinsanti">
         </div>
         <div class="product-info">
           <div class="product-text">
@@ -249,7 +269,7 @@
     <section>
       <div class="wrapper">
         <div class="product-img">
-          <img src="./imag/PERFIL-LUJÁN.jpg">
+          <img src="./imag/PERFIL-LUJÁN.jpg" alt="María Luján Acuña Verón" loading="lazy">
         </div>
         <div class="product-info">
           <div class="product-text">
@@ -268,6 +288,12 @@
         </div>
       </div>
     </section>
+
+
+    <section class="areas-externas">
+      <div> <a href="matriculas.html">Más información sobre nuestros abogados</a></div>
+    </section>
+
 
     <section class="areas-externas">
       <h3>Áreas externas</h3>
@@ -348,7 +374,7 @@
         PDF.
         <br>
         <br>
-        <a href="./imag/Spinsanti y Asociados.pdf">[Descargar Organigrama en PDF]</a>
+        <a href="./imag/Organigrama Spinsanti & Asociados.pdf">[Descargar Organigrama en PDF]</a>
         <br>
         <br>
         Valoramos la confianza que deposita en nosotros y estamos comprometidos a proporcionar servicios legales de la
@@ -385,9 +411,9 @@
       <h2>Members
         <h2 />
         <div class="imglogos">
-          <img src="./imag/logointegr (3).jpeg">
-          <img src="./imag/logointegr (1).jpeg">
-          <img src="./imag/logointegr (4).jpeg">
+          <img src="./imag/logointegr (3).jpeg" alt="Logo ODS">
+          <img src="./imag/logointegr (1).jpeg" alt="integración verde">
+          <img src="./imag/logointegr (4).jpeg" alt="Inter-americn bar association">
         </div>
     </section>
 
