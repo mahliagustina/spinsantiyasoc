@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviso legal</title>
-    <link rel="stylesheet" href="stylesheet/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;500;600&family=Montserrat:wght@100&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descrption" content="Estudio jurídico Spinsati y Asociados">
+  <title>Spinsanti & Asoc.</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+ 
+
+  <!-- Pre-load -->
+ <link rel="preload" href="stylesheet/normalize.css" as="style">
+ <link rel="stylesheet" href="stylesheet/normalize.css">
+
+ <link rel="preload" href="stylesheet/styles.css" as="style">
+ <link rel="stylesheet" href="stylesheet/styles.css">
+
+ <link rel="preload" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;500;600&family=Montserrat:wght@100&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@100;300&display=swap"
+ crossorigin="crossorigin"   as="font" >
+ <link
+ href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;500;600&family=Montserrat:wght@100&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@100;300&display=swap"
+ rel="stylesheet">
+
+ <link rel="preload" href="./imag/Opción78.png" as="image">
+
 </head>
+
 <body>
-    <header>
-        <h1 class="titulo">Spinsanti y Asoc.
-          <span>Asesoramiento y litigación</span>
-        </h1>
-        <img class="logo" src="./imag/Opción78.png" alt=""> 
-    </header>
-
-<section class="top-nav">
-    <!-- Menú hamburguesa -->
-    <!-- <section class="top-nav"> -->
-
-
-
-    <!-- Menú simple -->
-<div class="nav-bg" class="menu">
-    <nav class="navegacion-principal contenedor">
-      <a href="index.html">Quienes somos</a>
-      <a href="consultoria.html">Consultoría</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="newsletter.html">Newsletter</a>
+    <!-- Navbar Here -->
+    <nav class="navbar">
+    <div class="navbar__container">
+        <!-- En lugar de palabras ubicar la imagen -->
+        <img class="Spinsanti y asociados" src="./imag/Opción78.png" alt="">
+    <a class="navbar__logo" 
+    >Spinsanti y Asoc.
+       <span> Asesoramiento y litigación</span></a>
+    <div class="navbar__toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+    <li class="navbar__item">
+    <a href="index.html" class="navbar__links" id="home-page">Quienes somos</a>
+    </li>
+    <li class="navbar__item">
+    <a href="consultoria.html" class="navbar__links" id="category-page">Consultoría</a>
+    </li>
+    <li class="navbar__item">
+    <a href="contacto.html" class="navbar__links" id="about-page">Contacto</a>
+    </li>
+    <li class="navbar__btn">
+    <a href="newsletter.html" class="navbar__links" id="join-page">Newsletter</a>
+    </li>
+    </ul>
+    </div>
     </nav>
-</div>
+  
+    
 </section>
 
 
@@ -94,7 +122,7 @@
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
             </svg>
-            <h3><a target="_blank" href="https://wa.me/+542213537361">+54 221 3537361</a> / <a target="_blank"
+            <h3><a target="_blank" href="https://wa.me/+542213537361">+54 221 482-6314</a> / <a target="_blank"
                     href="https://wa.me/+542214360981">+54 221 4360981</a></h3>
            </div>
   
@@ -118,6 +146,7 @@
     <p>© 2023 Spinsanti y Asociados. Todos los derechos reservados.</p>
 </footer>
   
-  
+  <!-- JS que funciona para interactividad del menú hamburguesa -->
+  <script src="menuhambur.js"></script>
   </body>
   </html>

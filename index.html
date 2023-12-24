@@ -30,36 +30,66 @@
 </head>
 
 <body>
-  <header>
+    <!-- Navbar Here -->
+    <nav class="navbar">
+    <div class="navbar__container">
+        <!-- En lugar de palabras ubicar la imagen -->
+        <img class="Spinsanti y asociados" src="./imag/Opción78.png" alt="">
+    <a class="navbar__logo" 
+    >Spinsanti y Asoc.
+       <span> Asesoramiento y litigación</span></a>
+    <div class="navbar__toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+    <li class="navbar__item">
+    <a href="index.html" class="navbar__links" id="home-page">Quienes somos</a>
+    </li>
+    <li class="navbar__item">
+    <a href="consultoria.html" class="navbar__links" id="category-page">Consultoría</a>
+    </li>
+    <li class="navbar__item">
+    <a href="contacto.html" class="navbar__links" id="about-page">Contacto</a>
+    </li>
+    <li class="navbar__btn">
+    <a href="newsletter.html" class="navbar__links" id="join-page">Newsletter</a>
+    </li>
+    </ul>
+    </div>
+    </nav>
+  
+    
+  <!-- <header>
     <h1 class="titulo">Spinsanti y Asoc.
       <span>Asesoramiento y litigación</span>
-    </h1>
+    </h1> -->
     <!-- <picture>
       <source srcset="./imag/Opción78.webp" alt="estudio espinsanti"> -->
-      <img class="logo" src="./imag/Opción78.png" alt="estudio espinsanti">
+      <!-- <img class="logo" src="./imag/Opción78.png" alt="estudio espinsanti"> -->
     <!-- </picture> -->
-  </header>
+  <!-- </header>
 
-  <section class="top-nav">
+  <section class="menu-fijo"> -->
   <!-- Menú simple -->
-    <div class="nav-bg" class="menu">
-      <nav class="navegacion-principal contenedor">
+    <!-- <div class="nav-bg">
+      <nav class="navegacion-principal" id="_items">
         <a href="index.html">Quienes somos</a>
         <a href="consultoria.html">Consultoría</a>
         <a href="contacto.html">Contacto</a>
-        <div class="actualiza">
-        <a class="actualiza" href="newsletter.html">Newsletter </a>
-      </div>
+         <div class="actualiza">
+          <a class="actualiza" href="newsletter.html">Newsletter </a>
+        </div>
       </nav>
     </div>
+  -->
   </section>
 
 
   <section class="hero">
     <div class="contenido-hero">
       <p class="inicio">"Cuando las cosas se piensan bien, es cuando se meditan largamente"</p>
-      <!-- <a class="boton" href="boton">Contactanos</a> -->
-      <!-- <h2>Spinsanti & Asoc. <span class="sp">Estudio jurídico</span></h2> -->
     </div>
 
 
@@ -489,8 +519,8 @@
               <path
                 d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
             </svg>
-            <h3><a target="_blank" href="https://wa.me/+542213537361">+54 221 3537361</a> / <a target="_blank"
-                href="https://wa.me/+542214360981">+54 221 4360981</a></h3>
+            <h3><a target="_blank" href="https://wa.me/+542213537361">+54 221 482-6314</a> / <a target="_blank"
+                href="https://wa.me/+542214360981">+54 221 436-0981</a></h3>
           </div>
 
           <a target="_blank" class="linea-contacto"
@@ -514,9 +544,12 @@
     <footer class="footer">
       <p>© 2023 Spinsanti y Asociados. Todos los derechos reservados.</p>
     </footer>
-
-
-    <script src="menu.js"> </script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/44152271.js"></script>
+<!-- End of HubSpot Embed Code -->
+<!-- JS que funciona para interactividad del menú hamburguesa -->
+    <script src="menuhambur.js"></script>
+    <!-- <script src="menu-fijo.js"></script>  -->
 </body>
 
 </html>

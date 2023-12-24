@@ -30,28 +30,37 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="titulo">Spinsanti y Asoc.
-      <span>Asesoramiento y litigación</span>
-    </h1>
-    <!-- <picture>
-      <source srcset="./imag/Opción78.webp" alt="estudio espinsanti"> -->
-      <img class="logo" src="./imag/Opción78.png" alt="estudio espinsanti">
-    <!-- </picture> -->
-  </header>
-
-  <section class="top-nav">
-  <!-- Menú simple -->
-    <div class="nav-bg" class="menu">
-      <nav class="navegacion-principal contenedor">
-        <a href="index.html">Quienes somos</a>
-        <a href="consultoria.html">Consultoría</a>
-        <a href="contacto.html">Contacto</a>
-        <div class="actualiza">
-        <a class="actualiza" href="newsletter.html">Newsletter </a>
-      </div>
-      </nav>
+    <!-- Navbar Here -->
+    <nav class="navbar">
+    <div class="navbar__container">
+        <!-- En lugar de palabras ubicar la imagen -->
+        <img class="Spinsanti y asociados" src="./imag/Opción78.png" alt="">
+    <a class="navbar__logo" 
+    >Spinsanti y Asoc.
+       <span> Asesoramiento y litigación</span></a>
+    <div class="navbar__toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
     </div>
+    <ul class="navbar__menu">
+    <li class="navbar__item">
+    <a href="index.html" class="navbar__links" id="home-page">Quienes somos</a>
+    </li>
+    <li class="navbar__item">
+    <a href="consultoria.html" class="navbar__links" id="category-page">Consultoría</a>
+    </li>
+    <li class="navbar__item">
+    <a href="contacto.html" class="navbar__links" id="about-page">Contacto</a>
+    </li>
+    <li class="navbar__btn">
+    <a href="newsletter.html" class="navbar__links" id="join-page">Newsletter</a>
+    </li>
+    </ul>
+    </div>
+    </nav>
+  
+    
   </section>
 
 
@@ -159,6 +168,8 @@
 
 
   <script src="menu.js"> </script>
+  <!-- JS que funciona para interactividad del menú hamburguesa -->
+  <script src="menuhambur.js"></script>
 </body>
 
 </html>
