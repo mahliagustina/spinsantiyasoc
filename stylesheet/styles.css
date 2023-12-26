@@ -145,6 +145,7 @@ color: var(--tercero);
 display: flex;
 align-items: center;
 justify-content: center;
+margin-left: -1.25rem;
 width: 125px;
 text-decoration: none;
 height: 100%;
@@ -1882,7 +1883,6 @@ padding-bottom: 2rem;
   height: 40rem;
   margin-left: 10rem;
 }
-
 .footnote {
   text-decoration: none;
   color: #0077cc;
@@ -1943,6 +1943,91 @@ padding-bottom: 2rem;
   width: 60rem;
   height: 85rem;
 }
+
+@media (max-width:768px) {
+  .contenedor2 {
+    width: 80%;
+    text-align: center;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  
+  .noticia1 {
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .noticia1 h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    margin-right: -4rem;
+  }
+  
+  .noticia1 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align:start;
+    margin-left: 4.5rem;
+  }
+  
+  .noticia1 h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align:start;
+    margin-left: 4.5rem;
+  }
+  
+  .noticia1 p {
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 4rem;
+    margin-right: -4rem;
+  }
+  
+  .noticia1 img {
+    width: 30rem;
+    height: 20rem;
+    margin-left: 4rem;
+    margin-right: -4rem;
+  }
+
+  .noticia2 img {
+    width: 35rem;
+    height: 25rem;
+    margin-left: 2rem;
+    margin-right: -5rem;
+  }
+
+
+  .noticia4 img {
+    width: 25rem;
+    height: 25rem;
+  
+  
+  }
+  .imagen6 img {
+    height: 27.5rem;
+  }
+  
+  .noticia6 img {
+    width: 33rem;
+    height: 38rem;
+  }
+  
+  .noticia66 img {
+    width: 30rem;
+    height: 42rem;
+  }
+
+}
+
+
 
 /* AVISO LEGAL */
 
