@@ -1945,6 +1945,30 @@ padding-bottom: 2rem;
   height: 85rem;
 }
 
+.noticia7 img {
+  width: 63rem;
+  height: 37rem;
+}
+
+.noticiaEnero1 img{
+  width: 69rem;
+  height: 37rem;
+  margin-left: 6rem;
+}
+
+.mapa3 img{
+  margin-left: 15rem;
+  width: 50rem;
+  height: 100rem;
+}
+
+
+
+.bosques img{
+  margin-left: 28rem;
+  width: 20rem;
+  height: 20rem;
+}
 @media (max-width:768px) {
   .contenedor2 {
     width: 80%;
