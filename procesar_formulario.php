@@ -1,28 +1,28 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST["Nombre"];
-    $razonSocial = $_POST["RazonSocial"];
-    $email = $_POST["Email"];
-    $mensaje = $_POST["Mensaje"];
+// config.php
 
-    $destinatario = "mahliluz1@gmail.com"; // Reemplaza con tu dirección de correo electrónico
+// Incluir la clase de PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    $asunto = "Nuevo mensaje de formulario de contacto";
-    $contenido = "Nombre: $nombre\nRazón Social: $razonSocial\nCorreo: $email\nMensaje: $mensaje";
+require 'ruta/a/tu/PHPMailer/src/Exception.php';
+require 'ruta/a/tu/PHPMailer/src/PHPMailer.php';
+require 'ruta/a/tu/PHPMailer/src/SMTP.php';
 
-    // Enviar el correo
-    mail($destinatario, $asunto, $contenido);
+// Crear una nueva instancia de PHPMailer
+$mail = new PHPMailer(true);
 
-    if (mail($destinatario, $asunto, $contenido)) {
-        header("Location: confirmacion.html");
-        exit();
-    } else {
-        echo "Error al enviar el correo. Por favor, contacta al administrador del sitio.";
-    }
-    
+// Configuración del servidor SMTP
+$mail->isSMTP();
+$mail->Host = 'tu_servidor_smtp';
+$mail->SMTPAuth = true;
+$mail->Username = 'tu_correo_smtp';
+$mail->Password = 'tu_contraseña_smtp';
+$mail->SMTPSecure = 'tls'; // O 'ssl' dependiendo de tu servidor
+$mail->Port = 587; // Ajusta el puerto según la configuración de tu servidor
 
-    // Puedes redirigir a una página de confirmación
-    header("Location: confirmacion.html");
-    exit();
-}
-?>
+// Configuración adicional
+$mail->setFrom('tucorreo@gmail.com', 'Tu Nombre');
+$mail->addReplyTo('tucorreo@gmail.com', 'Tu Nombre');
+$mail->CharSet = 'UTF-8';
+
+// Resto de la configuración...

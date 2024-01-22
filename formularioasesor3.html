@@ -75,75 +75,78 @@
  <section>
     <h2 class="titulo-asesoramiento1">Asesoramiento para empresas</h2>
 
-    <form action="procesar_formulario.php" method="POST" class="formulario-asesoramiento1" id="contactForm">
-      <fieldset>
-          <legend>Contáctanos llenando todos los campos</legend>
-          <div class="contenedor-campos3">
-            <div class="campo3">
-                <label>Nombre y apellido</label>
-                <input name="Nombre" type="text" id="nombre" placeholder="Tu nombre" required>
-            </div>
-        
-            <div class="campo3">
-                <label>Razón social</label>
-                <input name="RazonSocial" type="text" id="razon" placeholder="Razón social" required>
-            </div>
-        
-            <div class="campo3">
-                <label>Actividades principales</label>
-                <input name="ActividadesPrincipales" type="text" id="act1" placeholder="Actividades principales" required>
-            </div>
-        
-            <div class="campo3">
-                <label>Actividades secundarias</label>
-                <input name="ActividadesSecundarias" type="text" id="act2" placeholder="Actividades secundarias(opcional)">
-            </div>
-        
-            <div class="campo3">
-                <label>País y ciudad donde radica</label>
-                <input name="PaisCiudadRadica" type="text" id="pais" placeholder="País y ciudad" required>
-            </div>
-        
-            <div class="campo3">
-                <label>País y ciudad donde desarrolla actividades secundarias</label>
-                <input name="PaisCiudadActividadesSecundarias" type="text" id="pais2" placeholder="País y ciudad">
-            </div>
-        
-            <div class="campo3">
-                <label>Año de inicio de actividades</label>
-                <input name="AnioInicioActividades" type="number" placeholder="Año" required>
-            </div>
-        
-            <div class="campo3">
-                <label>Correo</label>
-                <input name="Email" type="email" id="correo" placeholder="Tu email" required>
-            </div>
-        
-            <div class="campo campo3">
-                <p>
-                    <label for="empleados">
-                        <span>Cantidad de empleados:</span>
-                    </label>
-                    <select name="CantidadEmpleados" id="emple">
-                        <option value="opción12">Entre 0-5</option>
-                        <option value="opción22">Entre 5-10</option>
-                        <option value="opción32">Entre 10-50</option>
-                        <option value="opción42">Más de 50</option>
-                    </select>
-                </p>
-            </div>
-        
-            <!-- Otros campos del formulario -->
-        
-            <fieldset>
-                <legend>Clase de servicio jurídico requerido:</legend>
-                <ul>
-                    <li>
-                        <label for="title_1">
-                            <input type="radio" id="title_1" name="title" value="K" />
-                            Diagnóstico de resolución de consulta con primera entrevista online
+    <form  action="https://formsubmit.co/asesoramiento@estudiospinsantiyasociados.com.ar" method="POST" class="formulario-asesoramiento1" id="contactForm">
+        <fieldset>
+            <legend>Contáctanos llenando todos los campos</legend>
+            <div class="contenedor-campos3">
+                <div class=" campo3">
+                    <label>Nombre y apellido</label>
+                    <input  name="Nombre" type="text" id="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class=" campo3">
+                    <label>Razón social</label>
+                    <input type="text" id="razon" placeholder="Razón social" required>
+                </div>
+
+                <div class=" campo3">
+                    <label>Actividades principales</label>
+                    <input type="text" id="act1" placeholder="Actividades principales" required>
+                </div>
+
+             
+
+                <div class="campo3">
+                    <label>Actividades secundarias</label>
+                    <input type="text" id="act2" placeholder="Actividades secundarias(opcional)">
+                </div>
+
+                <div class="campo3">
+                    <label>País y ciudad donde radica</label>
+                    <input type="text" id="pais" placeholder="País y ciudad" required>
+                </div>
+
+                <div class=" campo3">
+                    <label>País y ciudad donde desarrolla actividades secundarias</label>
+                    <input type="text" id="pais2" placeholder="País y ciudad">
+                </div>
+
+                <div class=" campo3">
+                    <label>Año de inicio de actividades</label>
+                    <input type="number"  placeholder="Año" required>
+                </div>
+
+                <div class="campo3">
+                    <label>Correo</label>
+                    <input name="Email" type="email" id="correo" placeholder="Tu email" required>
+                </div>
+
+                <div class="campo campo3">
+                    <p>
+                        <label for="empleados">
+                          <span>Cantidad de empleados:</span>
                         </label>
-                    </li>
+                     
+                        <select id="emple" name="emplead">
+                          <option value="opción12">Entre 0-5</option>
+                          <option value="opción22">Entre 5-10</option>
+                          <option value="opción32">Entre 10-50</option>
+                          <option value="opción42">Más de 50</option>
+                        </select>
+                      </p>
+                </div>
+
+
+
+                <div class="opciones3 campo3">
+                    <legend>Clase de servicio jurídico requerido:</legend>
+                    <ul>
+                      <li>
+                        <label for="title_1">
+                          <input type="radio" id="title_1" name="title" value="K" />
+                          Diagnóstico de resolución de consulta con primera entrevista online
+                        </label>
+                      </li>
                       <li>
                         <label for="title_2">
                           <input type="radio" id="title_2" name="title" value="Q" />
@@ -233,11 +236,17 @@
                       </li>
                     </ul>
                   </fieldset>
-                  <div class="campo3">
-                      <label name="Mensaje">Mensaje</label>
-                      <textarea name="Mensaje" id="mensaje" cols="30" rows="10" required></textarea>
-                  </div>
-              </div>
+                  <p>
+                </div>                
+            
+              
+
+                <div class="campo3">
+                    <label name="Mensaje">Mensaje</label>
+                    <textarea id="mensaje" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
+
             <div class="enviar alinear-derecha flex">
                 <input class="btn-enviar" type="submit" value="Enviar">
             </div>
@@ -250,7 +259,7 @@
  <!-- Section Aviso legal -->
  <section class="aviso-legal">
   <p>Al enviar el formulario confirmo que he leído el <a href="./avisolegal.html">aviso legal</a>.</p>
-
+</section>
 
         <!-- Sección Contactos  -->
 
