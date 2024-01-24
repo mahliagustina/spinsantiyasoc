@@ -921,21 +921,36 @@ padding-bottom: 2rem;
 
 /* INICIO SECCIÓN NUESTRA HISTORIA */
 
+/* Estilos generales para pantallas grandes */
 .logo-antiguo {
-  height: 100px;
+  height: 60px;
   width: 200px;
   margin-top: 3rem;
 }
-.logo-antiguo {
-  height: 225px;
-  width: 400px;
-  margin-top: 3rem;
+
+.imagenes-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Media query para pantallas más pequeñas (ejemplo: dispositivos móviles) */
+@media screen and (max-width: 600px) {
+  .logo-antiguo {
+    width: 100%; /* Ajusta el ancho al 100% para ocupar el ancho completo del contenedor */
+    height: auto; /* Ajusta la altura automáticamente según la proporción original */
+    margin-top: 1rem; /* Ajusta el margen superior según sea necesario */
+  }
+
+  .imagenes-container {
+    flex-direction: column; /* Cambia la dirección a columna para mostrar las imágenes una encima de la otra */
+    gap: 10px; /* Espacio entre las imágenes en la versión móvil */
+  }
 }
 
 .imagenes-container {
   display: flex; /* Establece un layout en línea (fila) para los elementos hijos */
   gap: 20px; 
-  margin-left: 10rem;
+  margin-left: 0rem;
 }
 
 .epigrafe {
