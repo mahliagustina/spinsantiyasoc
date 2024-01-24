@@ -1,4 +1,4 @@
-// config.php
+<!-- // config.php
 
 // Incluir la clase de PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
@@ -13,10 +13,10 @@ $mail = new PHPMailer(true);
 
 // Configuración del servidor SMTP
 $mail->isSMTP();
-$mail->Host = 'tu_servidor_smtp';
+$mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'tu_correo_smtp';
-$mail->Password = 'tu_contraseña_smtp';
+$mail->Username = 'mahliluz1@gmail.com';
+$mail->Password = 'Mujercitas';
 $mail->SMTPSecure = 'tls'; // O 'ssl' dependiendo de tu servidor
 $mail->Port = 587; // Ajusta el puerto según la configuración de tu servidor
 
@@ -25,4 +25,4 @@ $mail->setFrom('tucorreo@gmail.com', 'Tu Nombre');
 $mail->addReplyTo('tucorreo@gmail.com', 'Tu Nombre');
 $mail->CharSet = 'UTF-8';
 
-// Resto de la configuración...
+// Resto de la configuración... -->
